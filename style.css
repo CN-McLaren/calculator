@@ -1,0 +1,51 @@
+.main {
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color:grey;   
+    padding:20px;
+}
+
+.screen {
+    display:flex;
+    padding:30px;
+    background-color: antiquewhite;
+}
+
+button {
+    padding:20px;
+    width:60px;
+}
+
+.clear {
+    width:120px;
+}
+
+.back {
+    width:120px;
+}
+
+.functionButtons {
+    display:flex;
+    justify-content: space-around;
+}
+
+.buttonsColumnOne {
+    display: flex;
+}
+
+.buttonsColumnTwo {
+    display: flex;
+}
+
+.buttonsColumnThree {
+    display: flex;
+}
+
+.buttonsColumnFour {
+    display: flex;
+}
