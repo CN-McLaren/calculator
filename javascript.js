@@ -2,7 +2,7 @@ let firstNum = "";
 let secondNum = "";
 let operator = "";
 
-const displayScreenInputs = document.querySelector(".screenImputs");
+const displayScreenInputs = document.querySelector(".screenInputs");
 const displayScreenOutput = document.querySelector(".screenOutput");
 
 const numberButtons = document.querySelectorAll(".number");
@@ -25,7 +25,8 @@ numberButtons.forEach((number) => {
 });
 
 function handleNumber(number) {
-    console.log(number);
+    firstNum += number;
+    displayScreenOutput.textContent = firstNum;
 };
 
 operatorButtons.forEach((operator) => {
@@ -34,6 +35,8 @@ operatorButtons.forEach((operator) => {
     });
 });
 
-function handleOperator(operator) {
-    console.log(operator);
+function handleOperator(op) {
+    operator = op;
+    secondNum = firstNum;
+    displayScreenInputs.textContent = secondNum + operator;
 };
