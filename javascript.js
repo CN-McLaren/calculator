@@ -56,7 +56,9 @@ function operate() {
     } else if (operator === "x") {
         secondNum = secondNum * firstNum;
     } else if (operator === "/") {
-        secondNum = secondNum / firstNum;
+        if (firstNum === 0 || secondNum === 0) {
+            secondNum = "ERROR";
+        } else secondNum = secondNum / firstNum;
     };
 
     displayScreenPrevious.textContent = "";
