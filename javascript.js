@@ -17,6 +17,7 @@ const decimalButton = document.querySelector(".decimal");
 const backButton = document.querySelector(".back");
 
 const clearButton = document.querySelector(".clear");
+clearButton.addEventListener("click", clearBtn);
 
 
 numberButtons.forEach((number) => {
@@ -61,5 +62,13 @@ function operate() {
     displayScreenPrevious.textContent = "";
     displayScreenCurrent.textContent = secondNum;
     firstNum = "";
+    displayScreenPrevious.textContent = "";
+}
+
+function clearBtn() {
+    firstNum = "";
+    secondNum = "";
+    operator = "";
+    displayScreenCurrent.textContent = "";
     displayScreenPrevious.textContent = "";
 }
