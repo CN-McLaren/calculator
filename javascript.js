@@ -10,6 +10,7 @@ const numberButtons = document.querySelectorAll(".number");
 const operatorButtons = document.querySelectorAll(".operator");
 
 const equalButton = document.querySelector(".equals");
+equalButton.addEventListener("click", operate);
 
 const decimalButton = document.querySelector(".decimal");
 
@@ -39,4 +40,26 @@ function handleOperator(op) {
     operator = op;
     secondNum = firstNum;
     displayScreenInputs.textContent = secondNum + operator;
+    firstNum = "";
+    displayScreenOutput.textContent = "";
 };
+
+function operate() {
+    secondNum = Number(secondNum);
+    firstNum = Number(firstNum);
+
+    if (operator === "+") {
+        secondNum = secondNum + firstNum;
+    } else if (operator === "-") {
+        secondNum = secondNum - firstNum;
+    } else if (operator === "x") {
+        secondNum = secondNum * firstNum;
+    } else if (operator === "/") {
+        secondNum = secondNum / firstNum;
+    };
+
+    displayScreenOutput.textContent = "";
+    displayScreenInputs.textContent = secondNum;
+    firstNum = "";
+    displayScreenOutput.textContent = "";
+}
