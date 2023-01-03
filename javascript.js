@@ -2,8 +2,8 @@ let firstNum = "";
 let secondNum = "";
 let operator = "";
 
-const displayScreenInputs = document.querySelector(".screenInputs");
-const displayScreenOutput = document.querySelector(".screenOutput");
+const displayScreenCurrent = document.querySelector(".screenCurrent");
+const displayScreenPrevious = document.querySelector(".screenPrevious");
 
 const numberButtons = document.querySelectorAll(".number");
 
@@ -27,7 +27,7 @@ numberButtons.forEach((number) => {
 
 function handleNumber(number) {
     firstNum += number;
-    displayScreenOutput.textContent = firstNum;
+    displayScreenPrevious.textContent = firstNum;
 };
 
 operatorButtons.forEach((operator) => {
@@ -39,9 +39,9 @@ operatorButtons.forEach((operator) => {
 function handleOperator(op) {
     operator = op;
     secondNum = firstNum;
-    displayScreenInputs.textContent = secondNum + operator;
+    displayScreenCurrent.textContent = secondNum + operator;
     firstNum = "";
-    displayScreenOutput.textContent = "";
+    displayScreenPrevious.textContent = "";
 };
 
 function operate() {
@@ -58,8 +58,8 @@ function operate() {
         secondNum = secondNum / firstNum;
     };
 
-    displayScreenOutput.textContent = "";
-    displayScreenInputs.textContent = secondNum;
+    displayScreenPrevious.textContent = "";
+    displayScreenCurrent.textContent = secondNum;
     firstNum = "";
-    displayScreenOutput.textContent = "";
+    displayScreenPrevious.textContent = "";
 }
