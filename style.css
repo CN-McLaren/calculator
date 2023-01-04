@@ -1,5 +1,6 @@
 .main {
-    position: fixed;
+    border:5px solid #ccc;
+    position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -13,8 +14,17 @@
 .screen {
     display:flex;
     flex-direction: column;
-    padding:30px;
     background-color: antiquewhite;
+}
+
+.screenCurrent {
+    padding:15px;
+    background-color: blue;
+}
+
+.screenPrevious {
+    padding:15px;
+    background-color: red;
 }
 
 
