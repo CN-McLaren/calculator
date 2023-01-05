@@ -47,6 +47,34 @@ button {
     width:60px;
     margin:2px;
     font-size:20px;
+    color:white;
+    background-color: black;
+    border-radius:20%;
+    border-color:white;
+}
+
+.number:hover {
+    background-color: aqua;
+}
+
+.operator:hover {
+    background-color: aqua;
+}
+
+.equals:hover {
+    background-color: aqua;
+}
+
+.decimal:hover {
+    background-color: aqua;
+}
+
+.back:hover {
+    background-color: aqua;
+}
+
+.clear:hover {
+    background-color: aqua;
 }
 
 .clear {
