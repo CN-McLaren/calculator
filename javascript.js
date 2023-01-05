@@ -58,13 +58,26 @@ function operate() {
     } else if (operator === "/") {
         if (firstNum === 0 || secondNum === 0) {
             secondNum = "ERROR";
-        } else secondNum = secondNum / firstNum;
+            resultsDisplay();
+            return;
+        }
+        secondNum /= firstNum;
     };
 
+    secondNum = secondNum.toString();
+    resultsDisplay();
+
+}
+
+function resultsDisplay() {
+    if (secondNum.length <= 8) {
+        displayScreenCurrent.textContent = secondNum;
+    } else {
+        displayScreenCurrent.textContent = secondNum.slice(0, 8) + "...";
+    }
     displayScreenPrevious.textContent = "";
-    displayScreenCurrent.textContent = secondNum;
+    operator = "";
     firstNum = "";
-    displayScreenPrevious.textContent = "";
 }
 
 function clearBtn() {
