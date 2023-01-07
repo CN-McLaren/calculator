@@ -13,6 +13,7 @@ const equalButton = document.querySelector(".equals");
 equalButton.addEventListener("click", operate);
 
 const decimalButton = document.querySelector(".decimal");
+decimalButton.addEventListener("click", decimalBtn);
 
 const backButton = document.querySelector(".back");
 backButton.addEventListener("click", backBtn);
@@ -88,6 +89,13 @@ function clearBtn() {
     displayScreenPrevious.textContent = "";
 }
 
+function decimalBtn() {
+    if (!firstNum.includes(".")) {
+        firstNum += ".";
+        displayScreenPrevious.textContent = firstNum;
+    }
+}
+
 function backBtn() {
-    
+
 }
