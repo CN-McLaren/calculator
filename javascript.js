@@ -15,10 +15,10 @@ equalButton.addEventListener("click", operate);
 const decimalButton = document.querySelector(".decimal");
 
 const backButton = document.querySelector(".back");
+backButton.addEventListener("click", backBtn);
 
 const clearButton = document.querySelector(".clear");
 clearButton.addEventListener("click", clearBtn);
-
 
 numberButtons.forEach((number) => {
     number.addEventListener("click", (e) => {
@@ -86,4 +86,8 @@ function clearBtn() {
     operator = "";
     displayScreenCurrent.textContent = "";
     displayScreenPrevious.textContent = "";
+}
+
+function backBtn() {
+    
 }
