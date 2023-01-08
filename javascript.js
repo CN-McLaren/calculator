@@ -4,9 +4,7 @@ let operator = "";
 
 const displayScreenCurrent = document.querySelector(".screenCurrent");
 const displayScreenPrevious = document.querySelector(".screenPrevious");
-
 const numberButtons = document.querySelectorAll(".number");
-
 const operatorButtons = document.querySelectorAll(".operator");
 
 const equalButton = document.querySelector(".equals");
@@ -97,5 +95,5 @@ function decimalBtn() {
 }
 
 function backBtn() {
-
+    
 }

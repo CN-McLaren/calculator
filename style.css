@@ -14,7 +14,6 @@
 }
 
 .screen {
-    width:89;
     display:flex;
     flex-direction: column;
     background-color: antiquewhite;
@@ -84,11 +83,7 @@ button {
     background-color: aqua;
 }
 
-.clear {
-    width:120px;
-}
-
-.back {
+.clear, .back{
     width:120px;
 }
 
@@ -97,18 +92,6 @@ button {
     justify-content: space-around;
 }
 
-.buttonsColumnOne {
-    display: flex;
-}
-
-.buttonsColumnTwo {
-    display: flex;
-}
-
-.buttonsColumnThree {
-    display: flex;
-}
-
-.buttonsColumnFour {
+.buttonsColumnOne, .buttonsColumnTwo, .buttonsColumnThree, .buttonsColumnFour {
     display: flex;
 }
