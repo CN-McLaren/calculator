@@ -95,5 +95,8 @@ function decimalBtn() {
 }
 
 function backBtn() {
-    
+    var txt = document.querySelector(".screenPrevious").value;
+    txt = firstNum.slice(0,-1);
+    displayScreenPrevious.textContent = txt;
+    console.log(txt);
 }
