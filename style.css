@@ -8,7 +8,7 @@
 }
 
 .container {
-    background-color:grey;   
+    background-color:#155263;   
     padding:20px;
     border-radius: 2%;
 }
@@ -63,27 +63,15 @@ button {
 }
 
 .number:hover {
-    background-color: aqua;
+    background-color:#ff6f3c;
 }
 
-.operator:hover {
-    background-color: aqua;
+.operator:hover, .decimal:hover {
+    background-color:#ff9a3c
 }
 
-.equals:hover {
-    background-color: aqua;
-}
-
-.decimal:hover {
-    background-color: aqua;
-}
-
-.back:hover {
-    background-color: aqua;
-}
-
-.clear:hover {
-    background-color: aqua;
+.equals:hover, .back:hover, .clear:hover {
+    background-color:#ffc93c; 
 }
 
 .clear, .back{
