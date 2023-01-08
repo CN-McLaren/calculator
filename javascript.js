@@ -70,9 +70,9 @@ function operate() {
 
 function resultsDisplay() {
     if (secondNum.length <= 13) {
-        displayScreenCurrent.textContent = secondNum;
+        displayScreenPrevious.textContent = secondNum;
     } else {
-        displayScreenCurrent.textContent = secondNum.slice(0, 13) + "...";
+        displayScreenPrevious.textContent = secondNum.slice(0, 13) + "...";
     }
     displayScreenCurrent.textContent = "";
     operator = "";
