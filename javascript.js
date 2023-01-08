@@ -74,7 +74,7 @@ function resultsDisplay() {
     } else {
         displayScreenCurrent.textContent = secondNum.slice(0, 13) + "...";
     }
-    displayScreenPrevious.textContent = "";
+    displayScreenCurrent.textContent = "";
     operator = "";
     firstNum = "";
 }

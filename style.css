@@ -47,7 +47,6 @@
     padding-left: 10px;
 }
 
-
 button {
     padding:20px;
     width:60px;
@@ -57,6 +56,10 @@ button {
     background-color: black;
     border-radius:20%;
     border-color:white;
+}
+
+.buttonsColumnOne, .buttonsColumnTwo, .buttonsColumnThree, .buttonsColumnFour {
+    display: flex;
 }
 
 .number:hover {
@@ -90,8 +93,4 @@ button {
 .functionButtons {
     display:flex;
     justify-content: space-around;
-}
-
-.buttonsColumnOne, .buttonsColumnTwo, .buttonsColumnThree, .buttonsColumnFour {
-    display: flex;
 }
