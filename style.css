@@ -60,7 +60,7 @@ button {
 }
 
 .buttonsColumnOne, .buttonsColumnTwo, .buttonsColumnThree, .buttonsColumnFour {
-    display: flex;
+    display:flex;
 }
 
 .number:hover {
