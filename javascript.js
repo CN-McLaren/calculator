@@ -84,7 +84,7 @@ function clearBtn() {
     secondNum = "";
     operator = "";
     displayScreenCurrent.textContent = "";
-    displayScreenPrevious.textContent = "";
+    displayScreenPrevious.textContent = "0";
 }
 
 function decimalBtn() {
